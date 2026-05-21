@@ -1,6 +1,6 @@
 <div align="center">
 
-**中文** · [English](./model-library.md)
+**中文** · [English](./Model-Library-EN.md)
 
 </div>
 
