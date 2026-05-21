@@ -65,7 +65,7 @@ The Skill includes 30+ analytical models organized across three layers. Coverage
 |**Product & Business Architecture** | What solutions has the product built to achieve its commercial goals? | BCG Matrix · KANO · Stakeholder Analysis · MECE · Service Blueprint · System Map · Stage-Gate · Harris Profile · EVR Matrix · PMI · CBox · Objective Weighting · vALUe |
 |**UX & Execution** | What does the user see, click, and feel on screen? | Fogg Behavior Model · User Journey · HMW · Card Sorting · Gutenberg Diagram · Focus Flow · Hick's Law · Fitts's Law · Critical Path · Atomic Design |
 
-Full model definitions and usage notes → [`references/Model Library.md`](./references/Model%20Library%20EN.md)
+Full model definitions and usage notes → [`references/Model Library EN.md`](./references/Model%20Library%20EN.md)
 
 ---
 
