@@ -65,7 +65,7 @@ The Skill includes 30+ analytical models organized across three layers. Coverage
 |**Product & Business Architecture** | What solutions has the product built to achieve its commercial goals? | BCG Matrix · KANO · Stakeholder Analysis · MECE · Service Blueprint · System Map · Stage-Gate · Harris Profile · EVR Matrix · PMI · CBox · Objective Weighting · vALUe |
 |**UX & Execution** | What does the user see, click, and feel on screen? | Fogg Behavior Model · User Journey · HMW · Card Sorting · Gutenberg Diagram · Focus Flow · Hick's Law · Fitts's Law · Critical Path · Atomic Design |
 
-Full model definitions and usage notes → [`references/Model Library EN.md`](./references/Model%20Library%20EN.md)
+Full model definitions and usage notes → [`references/Model Library En.md`](./references/Model%20Library%20En.md)
 
 ---
 
@@ -74,6 +74,6 @@ Full model definitions and usage notes → [`references/Model Library EN.md`](./
 If you don't have access to the Skill feature, you can use these files directly as a System Prompt:
 
 📄 **[SKILL.md](./SKILL.md)** — Main prompt with role definition and full workflow  
-📄 **[references/Model Library EN.md](./references/Model%20Library%20EN.md)** — Model library appendix; recommended to append after the main prompt
+📄 **[references/Model Library En.md](./references/Model%20Library%20En.md)** — Model library appendix; recommended to append after the main prompt
 
 > **How to use**: Merge the contents of both files and paste into the System Prompt field of your Claude client, or configure it in any client that supports custom instructions.
