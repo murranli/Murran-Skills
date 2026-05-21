@@ -1,6 +1,6 @@
 <div align="center">
 
-[中文](./readme中文版.md) · **English**
+[中文](./Readme.md) · **English**
 
 </div>
 
