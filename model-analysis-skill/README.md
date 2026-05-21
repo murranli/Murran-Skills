@@ -22,7 +22,7 @@
 
 ## 📦 安装方式
 
-在 Claude Code、Codex、OpenClaw 等桌面端支持 Skill 的 Agent 里，直接说：
+在 Claude Code、Codex、OpenClaw 等支持 Skill 的 Agent 里，直接说：
 
 ```
 帮我安装这个 skill: https://github.com/murranli/Murran-Skills/tree/main/model-analysis-skill
