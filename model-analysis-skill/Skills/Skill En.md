@@ -1,7 +1,7 @@
 ---
 name: model-analysis
 description: 'Structured competitive and business model analysis framework using a reverse-engineering perspective. Systematically deconstructs products and markets across three layers: market strategy, product architecture, and user experience. Must be triggered when the user mentions competitive analysis, product analysis, market research, business model breakdown, product comparison, or industry research — even casual phrasings like "help me analyze product X" or "compare these two products". Supports both keyword input and screenshot upload.'
-vision: 1.0
+version: 1.0
 ---
 
 <div align="center">
