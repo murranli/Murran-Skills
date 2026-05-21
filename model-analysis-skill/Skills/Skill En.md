@@ -6,7 +6,7 @@ vision: 1.0
 
 <div align="center">
 
-[中文](./Skills/Skill.md) · **English**
+[中文](./Skill.md) · **English**
 
 </div>
 
