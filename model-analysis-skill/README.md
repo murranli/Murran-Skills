@@ -73,7 +73,7 @@ Skill 目前选取 30+ 个分析模型，按三个层次组织。模型覆盖范
 
 如果你不使用 Skill 功能，也可以直接将以下文件内容复制为系统提示词（System Prompt）使用：
 
-📄 **[Skill.md](./Skill.md)** — 主 Prompt，包含角色定义与完整工作流  
+📄 **[Skill.md](./Skills/Skill.md)** — 主 Prompt，包含角色定义与完整工作流  
 📄 **[references/model-library.md](./references/Model%20Library.md)** — 模型库附录，建议拼接在主 Prompt 末尾
 
 > 使用方式：将两个文件的内容合并后，粘贴至对话的 System Prompt 区域，或在支持自定义指令的客户端中配置。
