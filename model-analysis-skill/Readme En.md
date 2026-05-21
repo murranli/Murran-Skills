@@ -73,7 +73,7 @@ Full model definitions and usage notes → [`references/Model Library En.md`](./
 
 If you don't have access to the Skill feature, you can use these files directly as a System Prompt:
 
-📄 **[SKILL.md](./SKILL%20En.md)** — Main prompt with role definition and full workflow  
+📄 **[SKILL.md](./Skill%20En.md)** — Main prompt with role definition and full workflow  
 📄 **[references/Model Library En.md](./references/Model%20Library%20En.md)** — Model library appendix; recommended to append after the main prompt
 
 > **How to use**: Merge the contents of both files and paste into the System Prompt field of your Claude client, or configure it in any client that supports custom instructions.
