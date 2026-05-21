@@ -25,7 +25,7 @@
 在 Claude Code、Codex、OpenClaw 等支持 Skill 的 Agent 里，直接说：
 
 ```
-帮我安装这个 skill: https://github.com/YOUR_USERNAME/YOUR_REPO/tree/main/model-analysis-skill
+帮我安装这个 skill: https://github.com/murranli/Murran-Skills/tree/main/model-analysis-skill
 ```
 
 Agent 会自动拉取并完成安装，无需手动下载文件。
