@@ -25,7 +25,7 @@ Guided questioning to focus your analysis needs. Auto-routes to 3–4 models fro
 In any Skill-compatible Agent (Claude Code, Codex, OpenClaw, etc.), just say:
 
 ```
-Install this skill: https://github.com/YOUR_USERNAME/YOUR_REPO/tree/main/model-analysis-skill
+Install this skill: https://github.com/murranli/Murran-Skills/tree/main/model-analysis-skill
 ```
 
 The Agent will fetch and install it automatically — no manual download needed.
