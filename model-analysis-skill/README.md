@@ -65,7 +65,7 @@ Skill 目前选取 30+ 个分析模型，按三个层次组织。模型覆盖范
 | **产品与业务架构层** | 产品为了实现商业目的，提供了哪些解决方案 | BCG 矩阵 · KANO · 利益相关者分析 · MECE · 服务蓝图 · 系统图 · Stage-Gate · 哈里斯图表 · EVR 决策表 · PMI · CBox · 目标权重 · vALUe |
 | **用户体验与执行层** | 用户在屏幕上看到什么、点什么、感受到什么 | Fogg 行为模型 · 用户旅程 · HMW · 卡片分类法 · 古腾堡图表 · 焦点流转 · 席克定律 · 费茨定律 · 关键任务路径 · 原子设计理论 |
 
-完整模型定义与使用说明见 → [`references/model-library.md`](./references/model-library.md)
+完整模型定义与使用说明见 → [`references/Model-Library.md`](./references/Model%20Library.md)
 
 ---
 
@@ -74,6 +74,6 @@ Skill 目前选取 30+ 个分析模型，按三个层次组织。模型覆盖范
 如果你不使用 Skill 功能，也可以直接将以下文件内容复制为系统提示词（System Prompt）使用：
 
 📄 **[SKILL.md](./SKILL.md)** — 主 Prompt，包含角色定义与完整工作流  
-📄 **[references/model-library.md](./references/model-library.md)** — 模型库附录，建议拼接在主 Prompt 末尾
+📄 **[references/model-library.md](./references/Model%20Library.md)** — 模型库附录，建议拼接在主 Prompt 末尾
 
 > 使用方式：将两个文件的内容合并后，粘贴至对话的 System Prompt 区域，或在支持自定义指令的客户端中配置。
