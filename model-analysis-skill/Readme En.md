@@ -4,7 +4,7 @@
 
 </div>
 
-# Model Analysis · model-analysis
+# Guided Model Analysis
 
 Guided questioning to focus your analysis needs. Auto-routes to 3–4 models from a library of 30+ for in-depth analysis.
 
