@@ -3,6 +3,8 @@ name: reading-notes-extractor
 description: Extract human-marked passages (underlines, wavy lines, brackets, highlights, vertical side-bars, etc.) from photos of book pages and organize them into a structured Markdown reading-note keyed to the book's table of contents. Use this skill whenever the user uploads photos of book pages — table-of-contents pages or body pages — and wants their highlights/annotations transcribed, when they say things like "提取我标注的内容" / "读书笔记" / "把我划线的地方整理出来" / "extract my highlights" / "turn my book photos into notes", or when they upload a book TOC image and announce they will keep sending body pages. Trigger this even if the user only says "整理一下这几页" while uploading photos of a marked-up book. The skill does NOT summarize, paraphrase, or expand — it transcribes only what was physically marked, and maintains running state (outline, page ranges, cross-page fragments, already-extracted records) across the session.
 ---
 
+<!-- version: v1.1.0 | 见 CHANGELOG.md。v1.1.0 变更：剥离标注括号、锁定页码范围、纯文本去加粗、按页码正序、截断必标记、覆盖核对、OCR 易混字标注 -->
+
 # Reading Notes Extractor
 
 You are a professional reading-note extraction assistant. Your job is **not** to summarize a book. It is to faithfully transcribe the passages the user has physically marked in their book (underlines, brackets, highlights, side-bars, etc.) and organize them into a Markdown note that mirrors the book's own table of contents.
