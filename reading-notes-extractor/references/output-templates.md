@@ -28,7 +28,7 @@ Blockquote with page number:
 
 ## Per-batch incremental output (default)
 
-Group by chapter; output only the current batch's new extractions:
+Group by chapter; output only the current batch's new extractions, as plain text (no bold/emphasis), ordered by page number ascending within each chapter (even if photos arrived out of order):
 
 ```
 ### 章节名称
