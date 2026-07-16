@@ -1,0 +1,4 @@
+interface:
+  display_name: "交互设计评审"
+  short_description: "从产品需求拆解交互故事脚本与设计命题，并评审交互方案"
+  default_prompt: "使用 $interaction-design-review 分析这份产品需求，先判断信息是否充分，再输出三类假设用户的主线脚本与交互设计命题。"
