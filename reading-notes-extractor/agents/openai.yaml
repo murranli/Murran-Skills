@@ -1,0 +1,6 @@
+interface:
+  display_name: "Reading Notes Extractor"
+  short_description: "Extract marked book text and reconstruct visuals"
+  default_prompt: "Use $reading-notes-extractor to extract marked passages and selected visual objects from these book-page photos into a structured Markdown note."
+policy:
+  allow_implicit_invocation: true
