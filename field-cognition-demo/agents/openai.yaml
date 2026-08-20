@@ -1,0 +1,6 @@
+interface:
+  display_name: "场域认知演示"
+  short_description: "在设计画板旁模拟需求识别、轻量校准、认知变更与后台记录回放"
+  default_prompt: "使用 $field-cognition-demo，并从 /需求识别 开始演示购物车换购认知校准。"
+policy:
+  allow_implicit_invocation: true
