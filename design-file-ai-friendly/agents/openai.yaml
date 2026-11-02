@@ -1,0 +1,4 @@
+interface:
+  display_name: "设计稿件 AI 友好化"
+  short_description: "按选区执行结构清理、样式修正、布局调优与资产匹配，支持组合和断点续跑"
+  default_prompt: "使用 $design-file-ai-friendly，仅对当前选区执行结构清理和样式修正。"

@@ -1,0 +1,21 @@
+{
+  "source": "radius",
+  "rules": [
+    {"type":"悬浮容器型","radius":16,"unit":"DP","applies_to":"弹层、弹窗、底导等悬浮层中的大面积组件","source_section":"02 / 圆角数值1","id":"radius-1","refs":["5044:1828"]},
+    {"type":"悬浮容器型","radius":12,"unit":"DP","applies_to":"顶导、吐司提示等悬浮层中的小面积组件","source_section":"02 / 圆角数值2","id":"radius-2","refs":["5039:6356"]},
+    {"type":"页面结构型","radius":8,"unit":"DP","applies_to":"导购型页面的主体内容层聚合卡片容器、通栏卡片容器","source_section":"03 / 圆角数值1","id":"radius-3","refs":["5048:7"]},
+    {"type":"页面结构型","radius":0,"unit":"DP","applies_to":"平台型页面的主体内容层聚合卡片容器、通栏卡片容器","source_section":"03 / 圆角数值2","id":"radius-4","refs":["5048:354"]},
+    {"type":"组件型","radius":8,"unit":"DP","applies_to":"主体内容层、临时悬浮层的组件或容器","excludes":"聚合结构卡片","condition_as_printed":"单行高度40及以上","height":{"min":40,"inclusive":true,"unit":null},"source_section":"04 / 圆角数值1","id":"radius-5","refs":["5048:842"]},
+    {"type":"组件型","radius":6,"unit":"DP","applies_to":"主体内容层、临时悬浮层的组件","excludes":"聚合结构卡片","condition_as_printed":"单行高度28至36","height":{"min":28,"max":36,"inclusive":true,"unit":null},"source_section":"04 / 圆角数值2；示例 R=6","id":"radius-6","refs":["5048:858"]},
+    {"type":"组件型","radius":4,"unit":"DP","applies_to":"主体内容层、临时悬浮层的组件","excludes":"聚合结构卡片","condition_as_printed":"单行高度24","height":{"equals":24,"unit":null},"source_section":"04 / 圆角数值2；示例 R=4","id":"radius-7","refs":["5048:858"]},
+    {"type":"装饰型","radius":2,"unit":"DP","applies_to":"标签场景","source_section":"05 / 圆角数值1","id":"radius-8","refs":["5048:3437"]}
+  ],
+  "scope": ["四类按元素实际作用选择；本画板圆角数值不能作为所有节点的通用就近匹配序列。","悬浮容器型总述覆盖常驻悬浮层、基础模态层、模态内轻提示、二级强弹窗等层级，以面积大小区分16、12 DP。","组件型明确排除聚合结构卡片；后者按页面结构型及页面类别判断。"],
+  "unresolved": [
+    {"id":"radius-1","issue":"未给出大面积与小面积的数值分界；不能按示意画板或截图尺寸补造阈值。","handling":"不推断未覆盖条件或数值；当前场景不明时保留原稿。"},
+    {"id":"radius-2","issue":"组件高度条件未标注单位、适用稿件宽度或缩放换算；25–27、37–39及其他未覆盖高度没有对应规则，不能插值。","handling":"不推断未覆盖条件或数值；当前场景不明时保留原稿。"},
+    {"id":"radius-3","issue":"未给出导购型与平台型的完整判别条件；示例不能自动扩展成所有页面的分类依据。","handling":"不推断未覆盖条件或数值；当前场景不明时保留原稿。"},
+    {"id":"radius-4","issue":"未明确各类容器具体哪些角应用该数值；未给出圆角比例、内外层圆角关系、修正容差。","handling":"不推断未覆盖条件或数值；当前场景不明时保留原稿。"}
+  ],
+  "unit_mapping": "源文圆角单位DP；组件高度条件未标单位。执行前确认稿件尺度。"
+}

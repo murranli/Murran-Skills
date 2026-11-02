@@ -1,0 +1,30 @@
+{
+  "source": "typography",
+  "fonts": [
+    {"source_name":"Pingfang SC","source_aliases":["PingfangSC","苹方"],"usage":"移动端设计稿的基础内容字体；中英文混排统一使用苹方","strength":"使用要求","source_section":"03 字号、字阶、字重、字体 / 字体 b","refs":["4377:6624"]},
+    {"source_name":"京东朗正体2.0","source_aliases":["京东朗正2.0"],"usage":"业务标题及部分标志型文字，可搭配业务图形","strength":"可采用","source_section":"03 / 字体 a","refs":["4377:6624"]},
+    {"source_name":"京东正黑体2.3","source_aliases":["京东正黑2.3"],"usage":"数字及金额","strength":"尽可能采用","source_section":"03 / 字体 c","refs":["4377:6624"]}
+  ],
+  "weights": [
+    {"usage":"常规汉字内容","weight":"Regular","strength":"使用要求","source_section":"03 / 汉字字重","refs":["4377:6613","4377:6621"]},
+    {"usage":"需特殊强化的汉字内容","weight":"Semibold","examples":["商详名称","楼层标题","店铺标题","List内容引导","促销信息描述","Tab选中态","主按钮文字"],"condition":"与常规内容比用，突出重点，小范围应用","strength":"允许","source_section":"03 / 汉字字重","refs":["4377:6613","4377:6621"]},
+    {"usage":"上述汉字内容的其他字重","strength":"不可使用","reason_as_stated":"研发原因","source_section":"03 / 汉字字重","refs":["4377:6613","4377:6621"]},
+    {"usage":"一般数字内容","weight":"与搭配汉字保持同一字重","strength":"建议","source_section":"03 / 数字字重","refs":["4377:6614"]},
+    {"usage":"主价格、到手价等重要价格场景","weight":"Bold","strength":"使用要求","source_section":"03 / 数字字重","refs":["4377:6614"]},
+    {"usage":"灰字价、京东原价等对比场景","weight":"Regular","strength":"使用要求","source_section":"03 / 数字字重","refs":["4377:6614"]},
+    {"usage":"数字内容的其他字重","strength":"不建议","exception":"特殊场景","exception_details":null,"source_section":"03 / 数字字重","refs":["4377:6614"]}
+  ],
+  "sizes": {"source_section":"03 字号、字阶、字重、字体","reference_heading":"375 的递进（14或15 / 1.072 ≈ 13或14）","displayed_scale":[10,11,12,13,14,16,18,24],"scale_unit_context":"同节场景标注使用 pt；序列图本身未重复标注单位","scenarios":[{"usage":"最小字号","left_pt":10,"relation":"≈","right_pt":11,"source_3x_px":33},{"usage":"辅助字号","left_pt":11,"relation":"≈","right_pt":12,"source_3x_px":36},{"usage":"正文字号","left_pt":13,"relation":"≈","right_pt":14,"source_3x_px":42},{"usage":"模块标题字号","left_pt":16,"relation":"≈","right_pt":17,"source_3x_px":51},{"usage":"页面标题字号","left_pt":18,"relation":"≈","right_pt":19,"source_3x_px":57},{"usage":"商详价格字号","left_pt":24,"relation":"≈","right_pt":26,"source_3x_px":78}],"application_note":"保留原图左右两值及近似符号，不把它们合并成可互换值。原图未明确标注两列分别对应的稿件/设备宽度；场景绑定目标与 pt 到软件字段的映射待确认。不得据此对现稿统一乘除 1.072。","refs":["4377:6492","4377:6494","4377:6495","4377:6498","4377:6499","4377:6496","4377:6497"]},
+  "line_heights": [
+    {"usage":"单行标题/标签","percent":150,"purpose":"保证独立信息的识别性","example_as_printed":{"font_size_pt":15,"line_height_pt":22},"source_section":"04 行高、间距","refs":["4377:6654"]},
+    {"usage":"两行截断标题","percent":150,"purpose":"适度行间距，保证可读性","example_as_printed":{"font_size_pt":17,"line_height_pt":25},"source_section":"04 行高、间距","refs":["4377:6656"]},
+    {"usage":"价格","percent":150,"purpose":"保证价格的重要性","example_as_printed":{"font_size_pt":26,"line_height_pt":39},"source_section":"04 行高、间距","refs":["4377:6655"]},
+    {"usage":"多行正文段落","percent_range":[160,180],"purpose":"足够行间距，保证可读性","example_as_printed":{"font_size_pt":15,"line_height_pt":27},"source_section":"04 行高、间距","refs":["4377:6657"]}
+  ],
+  "unresolved": [
+    {"id":"size-reference-mapping","issue":"字号图标注 375 与 1.072 换算，场景使用 10≈11、13≈14 等双值，但未明确左右值各自的参考宽度。","effect":"不可自动选择一侧作为当前稿件的绑定值。"},
+    {"id":"line-height-rounding","issue":"150% 的单行示例为 15→22 pt、两行示例为 17→25 pt，与精确乘积 22.5、25.5 不同；未给出舍入方式。","effect":"保留比例规则与原示例差异，不自行推出向下取整或通用整数化规则。"},
+    {"id":"paragraph-range-choice","issue":"多行正文行高为 160%–180%，未给出区间内的选择条件。","effect":"范围内多候选时不得凭空选取固定值。"},
+    {"id":"cross-board-line-height","issue":"本页单行/标题/价格为150%，多行正文160–180%；布局3称所有文本≈150%，且列出24→32等非150%的固定表。","handling":"来源未明确优先级；不得用全局150%覆盖正文或固定表。仅在当前场景依据明确时选用，否则列待确认。","refs":["4377:6657","3771:3","3870:17"]}
+  ]
+}

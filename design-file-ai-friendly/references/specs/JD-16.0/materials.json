@@ -1,0 +1,31 @@
+{
+  "source": "materials",
+  "rules": [
+    {"id":"material-families","rule":"Liquid Glass日间/暗黑/高透用于原文所称iOS26以上；Frosted Glass日间/暗黑用于低版本安卓、鸿蒙、iOS；Frosted Glass渐变用于二级底部工具栏，不区分安卓与iOS。","refs":["4686:10","4686:1236"]},
+    {"id":"size-tier","rule":"组件高度≤48 DP为Small，>48 DP为Medium（中/大型）。","refs":["4686:255"]},
+    {"id":"day-background","rule":"背景HSB：S在20以下、B在80以上，选日间白色背板；图标/主标题用color_title，次要元素为color_title70%。","refs":["4686:380"]},
+    {"id":"dark-background","rule":"背景HSB：B在60以下，选暗黑背板；图标/主标题及次要元素使用对应暗黑token。","refs":["4686:380"]},
+    {"id":"clear-background","rule":"背景HSB：S为0–100、B为60–100，扣除日间区域，选高透背板；图标/主标题为color_primary_text。","refs":["4686:380"]},
+    {"id":"gradient-toolbar","rule":"常规工具栏背板：白色线性渐变，原文透明度70%–40%，背景模糊渐变半径2–16；按钮底色可按状态自定义，原文称叠加加暗模式。","refs":["4686:922"],"shadow_as_printed":{"inner":{"hex":"#00000","offset_y":0.5,"blur":1},"outer":{"hex":"#00000","offset_y":8,"blur":40}},"automatic_application":false}
+  ],
+  "parameter_units": "除高度DP、方向度数、明确%外，其他数值保持源文，不猜测软件参数单位/范围。",
+  "presets": [
+    {"id":"liquid-small","tier":"Small","typical_usage":["顶导","悬浮按钮"],"params":{"light_intensity":80,"light_direction_degrees":315,"refraction_strength":100,"refraction_range":16,"dispersion":0,"blur":7},"refs":["4686:241"]},
+    {"id":"liquid-medium","tier":"Medium","typical_usage":["底导"],"params":{"light_intensity":80,"light_direction_degrees":315,"refraction_strength":100,"refraction_range":16,"dispersion":0,"blur":12},"refs":["4686:317"]},
+    {"id":"frosted-small-day","tier":"Small","mode":"日间","alpha_label":"透明度","alpha_value":45,"background_blur":100,"refs":["4686:322"]},
+    {"id":"frosted-small-dark","tier":"Small","mode":"暗黑","alpha_label":"透明度","alpha_value":40,"background_blur":100,"refs":["7509:7"]},
+    {"id":"frosted-medium-day","tier":"Medium","mode":"日间","alpha_label":"透明度","alpha_value":85,"background_blur":100,"refs":["4686:321"]},
+    {"id":"frosted-medium-dark","tier":"Medium","mode":"暗黑","alpha_label":"透明度","alpha_value":80,"background_blur":100,"refs":["7509:6"]}
+  ],
+  "scenes": [
+    {"usage":"底导","preset":"liquid-medium","shadow":{"blur":40,"x":0,"y":8,"hex":"#000000","alpha_label":"透明度","alpha_percent":12},"refs":["4686:724"]},
+    {"usage":"顶导","preset":"liquid-small","shadow":{"blur":40,"x":0,"y":8,"hex":"#000000","alpha_label":"透明度","alpha_percent":12},"refs":["4686:766"]},
+    {"usage":"悬浮按钮","preset":"liquid-small","shadow":{"blur":20,"x":0,"y":4,"hex":"#000000","alpha_label":"透明度","alpha_percent":8},"refs":["4686:868"]}
+  ],
+  "unresolved": [
+    {"id":"invalid-shadow-color","issue":"工具栏内/外阴影原文均为#00000，只有5位。","handling":"保留原标注，禁止自动补零或绑定该阴影。","refs":["4686:922"]},
+    {"id":"material-parameter-mapping","issue":"透明度45/40/85/80无%单位；效果参数与软件字段、渐变方向/停靠点、阴影alpha及混合模式枚举不完整。","handling":"规则可用于选择材质类别；完整效果需核实资源，不直接创建近似材质。","refs":["4686:322","7509:7","4686:321","7509:6","4686:922"]},
+    {"id":"hsb-boundaries","issue":"“以下/以上”在S=20、B=60/80处的归属未明示；高透含60–100与暗黑范围边界可能重合。","handling":"边界场景待确认，不发明严格不等号。","refs":["4686:380"]},
+    {"id":"platform-version","issue":"版本兼容为源规范陈述，Android/鸿蒙的具体版本与降级条件未列。","handling":"作为来源条件使用，不当作当前所有设备能力的已验证事实。","refs":["4686:10","4686:1236"]}
+  ]
+}
