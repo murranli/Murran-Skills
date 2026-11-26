@@ -1,0 +1,4 @@
+interface:
+  display_name: "色彩与文字联合友好化"
+  short_description: "共享稿件读取与富文本处理，联合校准色彩和文字并统一验收"
+  default_prompt: "使用 $design-color-typography-friendly，依据本次色彩和文字 JSON 联合审核并修正指定稿件，复用读取、定位和验收工作。"
